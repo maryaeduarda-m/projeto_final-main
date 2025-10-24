@@ -1,74 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"defer></script>
-    <title>Document</title>
+    <script src="./script.js" defer></script>
+    <title>Meu Site</title>
 </head>
 <body>
- 
-
-    <header>
-    <img src="./image.png" alt="Logo" class="logo">
+    <header class="header">
+        <img src="./image.png" alt="Logo" class="logo">
+        <nav class="navegacao">
+            <ul class="menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#produtos" class="nav-link">Produtos</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-
-    <class navegação>
-      <ul class="menu">
-      <li>
-
-        <a href="Home" class="Home">Home</a>
-        <a href="Sobre" class="Sobre">Sobre</a>
-        <a href="Produtos" class="Produtos">Produtos</a>
-        <a href="Contato" class="Contato">Contato</a>
-
-      </li>
-      </ul>
-    </class>
-
     <section class="banner">
-    <img src="./1000236913 (1).png" height="200px" width="830" >
-    <div class="foto banner">Foto</div>
+        <!-- Duda, aqui você precisa colocar o caminho da sua imagem de banner -->
+        <img src="./1000236913 (1).png" alt="Banner" class="banner-img">
     </section>
 
     <section class="blog">
-    <h2>Blog</h2>
-    <div class="cards">
-    <div class="card">
-    <div class="foto">Foto</div>
-    <h3>Título</h3>
-    <p>Texto</p>
-    </div>
-    <div class="card">
-    <div class="foto">Foto</div>
-    <h3>Título</h3>
-    <p>Texto</p>
-    </div>
-    <div class="card">
-    <div class="foto">Foto</div>
-    <h3>Título</h3>
-    <p>Texto</p>
-    </div>
-    </div>
+        <h2>Blog</h2>
+        <div class="cards">
+            <!-- Duda, substitua o caminho de cada imagem (src="./...") pelas imagens que você quiser usar -->
+            <div class="card">
+                <img src="./IMG-20251024-WA0006.jpg" alt="Imagem 1" class="foto">
+                <div class="card-text">
+                    <h3>Título do Artigo</h3>
+                    <p>Descrição do artigo aqui. Você pode editar este texto diretamente no código HTML.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./IMG-20251024-WA0007.jpg" alt="Imagem 2" class="foto">
+                <div class="card-text">
+                    <h3>Outro Título</h3>
+                    <p>Outra descrição que pode ser editada diretamente no código.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./IMG-20251024-WA0008.jpg" alt="Imagem 3" class="foto">
+                <div class="card-text">
+                    <h3>Terceiro Título</h3>
+                    <p>Terceira descrição editável no código HTML.</p>
+                </div>
+            </div>
+        </div>
     </section>
     
-      <form action="">
-        <h2>Entre em Contato</h2>
-        <fieldset>
-            <label for="Nome">Nome:</label>
-            <input id="Nome" type="text">
-             <label for="Telefone">Telefone:</label>
-            <input id="Telefone" type="text">
-             <label for="Email">Email:</label>
-            <input id="Email" type="text">
-             <label for="Duvida">Duvida:</label>
-            <input id="Duvida" type="text">
-            <button>Enviar</button>
-
-        </fieldset>
-    </form>
-   <script>"script.js"</script>
+    <section class="contato">
+        <form id="formContato" action="">
+            <h2>Entre em Contato</h2>
+            <fieldset>
+                <label for="nome">Nome:</label>
+                <input id="nome" name="nome" type="text" required>
+                
+                <label for="telefone">Telefone:</label>
+                <input id="telefone" name="telefone" type="tel" required>
+                
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="email" required>
+                
+                <label for="duvida">Dúvida:</label>
+                <textarea id="duvida" name="duvida" rows="4" required></textarea>
+                
+                <button type="submit" style="margin-top: 10px;">Enviar</button>
+            </fieldset>
+        </form>
+    </section>
 </body>
 </html>
