@@ -197,3 +197,29 @@ button {
     font-weight: bold;
     margin-top: 10px;
 }
+
+
+.blog{
+    background-color: lightskyblue;
+    padding: 50px;
+    text-align: center;
+}
+
+.img2{
+  height: 500px;
+  width: 100%;
+}
+
+
+h2{
+    justify-content: center;
+    display: flex;
+    font-size: 20;
+    margin-top: auto;
+}
+
+
+footer{
+    justify-content: center;
+    background-color: #1a365d;
+}
