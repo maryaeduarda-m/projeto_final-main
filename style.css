@@ -8,16 +8,16 @@ body {
 .header {
     background-color: #061a40;
     padding: 15px 50px;
-    overflow: hidden; /* evita que o menu flutue fora */
+    overflow: hidden; 
 }
 
 .logo {
     height: 55px;
-    float: left; /* logo à esquerda */
+    float: left; 
 }
 
 .navegacao {
-    float: right; /* menu à direita */
+    float: right; 
 }
 
 .menu {
@@ -170,7 +170,7 @@ button {
 }
 
 button:hover {
-    background-color: #2374ab;
+    background-color: #061a40;
 }
 
 
